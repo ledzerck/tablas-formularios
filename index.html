@@ -8,6 +8,93 @@
 <body>
 
     <h1>Tablas y formularios</h1>
+
+<h2>Tablas</h2>
+
+    <table border="1px">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+        </tr>
+
+        <tr>
+            <td>Aldo</td>
+            <td>Ledesma</td>
+            <td>aldo@devf.mx</td>
+        </tr>
+
+        <tr>
+            <td>Nayeli</td>
+            <td>Guzmán</td>
+            <td>nay@devf.mx</td>
+        </tr>
+    </table>
+<br>
+<hr>
+
+<h2>Formularios</h2>
+
+<form action="archivo_que_procesa_los_datos.php">
+
+    <!-- Atributos aceptados por el input de text: placeholder, value, required, disabled, name -->
+    <label for="nombre_de_usuario">Nombre:</label>
+    <input name="nombre_de_usuario" type="text" placeholder="Nombre" required>
+
+    <label for="correo">Email:</label>
+    <input name="correo" type="email" placeholder="e-mail" required>
+
+    <br><br>
+
+    <label for="password">Contraseña:</label>
+    <input name="password" type="password" placeholder="Contraseña">
+
+    <br><br>
+
+    <!-- Textarea -->
+
+    <label for="comentarios">Comentarios:</label>
+    <br>
+    <textarea name="comentarios" rows="6" cols="50"></textarea>
+
+    <br><br>
+    <!-- Select -->
+    <label for="sabores"> Sabores</label>
+    <br>
+    <select name="sabores">
+        <option value="" selected disabled hidden>Selecciona una opción</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Fresa">Fresa</option>
+    </select>
+
+    <br><br>
+    <!-- Radio -->
+     <label for="genero">Género:</label>
+     <br>
+     <input type="radio" name="genero"> Masculino
+     <input type="radio" name="genero"> Femenino
+
+    <br><br>
+     <!-- Checkbox -->
+      <label for="terminos"> Aceptas nuestros términos y condiciones:</label>
+      <br>
+      <input type="checkbox"> Si
+      
+      <br><br>
+    <!-- Enviar / submit -->
+     <button type="submit">Enviar</button>
+
+
+
+
+
+</form>
+
     
 </body>
 </html>
+
+
+
+
